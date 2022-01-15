@@ -20,8 +20,8 @@ public class PatientController {
 
     @RequestMapping(value = "/create/Patient",
             method = RequestMethod.POST,
-            consumes = {"application/json"},
-            produces = {"application/json"})
+            consumes = {"text/plain"},
+            produces = {"text/plain"})
     @ResponseStatus(HttpStatus.CREATED)
     public void createPatient(@RequestParam String familyName, @RequestParam String givenName) {
 
